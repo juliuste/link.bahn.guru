@@ -31,14 +31,12 @@ const generateLink = async (journey, bahncard, travelClass) => {
 	if (!['1', '2'].includes(travelClass)) throw new Error('invalid class')
 	if (journey.type !== 'journey' || !journey.legs || journey.legs.length === 0) throw new Error('invalid journey')
 
-	if (journey.legs.length === 1) {
-		try {
-			const link = await shopUrl(journey, {bahncard, class: travelClass})
-			return link
-		} catch (e){
-			if (e.message !== 'no matching outbound journey found') {
-				throw e
-			}
+	try {
+		const link = await shopUrl(journey, {bahncard, class: travelClass})
+		return link
+	} catch (e){
+		if (e.message !== 'no matching outbound journey found') {
+			throw e
 		}
 	}
 	return fallbackLink(journey, bahncard, travelClass)
