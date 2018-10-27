@@ -1,0 +1,13 @@
+#!/bin/sh
+
+rsync -rav --delete \
+	--exclude '.*' \
+	--exclude node_modules \
+	. 'europa:~/link.bahn.guru/'
+
+ssh europa "\
+cd ~/link.bahn.guru
+npm i
+npm update
+forever-service delete link.bahn.guru
+forever-service install link.bahn.guru --start -s index.js"

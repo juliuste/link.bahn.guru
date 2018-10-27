@@ -1,0 +1,35 @@
+{
+	"name": "link.bahn.guru",
+	"description": "Direct links to bahn.de",
+	"version": "0.0.0",
+	"keywords": [
+		"bahn",
+		"guru",
+		"bahn.guru",
+		"german",
+		"railways",
+		"deutsche",
+		"bahn",
+		"link",
+		"db"
+	],
+	"author": "Julius Tens <mail@juliustens.eu>",
+	"homepage": "https://github.com/juliuste/link.bahn.guru",
+	"repository": "juliuste/link.bahn.guru",
+	"bugs": "https://github.com/juliuste/link.bahn.guru/issues",
+	"main": "./index.js",
+	"dependencies": {
+		"compression": "^1.7.2",
+		"config": "^1.30.0",
+		"corser": "^2.0.1",
+		"express": "^4.16.3",
+		"generate-db-shop-urls": "github:juliuste/generate-db-shop-urls",
+		"moment-timezone": "^0.5.21"
+	},
+	"devDependencies": {},
+	"scripts": {},
+	"engines": {
+		"node": ">=8"
+	},
+	"license": "ISC"
+}
