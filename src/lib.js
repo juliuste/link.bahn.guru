@@ -8,7 +8,7 @@ const fallbackLink = (journey, bahncard, travelClass) => {
 	const origin = trainLegs[0].origin
 	const departure = trainLegs[0].departure
 	const destination = trainLegs[trainLegs.length - 1].destination
-	const date = DateTime.fromISO(departure).setZone('Europe/Berlin').format('dd.MM.yy')
+	const date = DateTime.fromISO(departure).setZone('Europe/Berlin').toFormat('dd.MM.yy')
 
 	const data = {
 		startSucheSofort: true,
