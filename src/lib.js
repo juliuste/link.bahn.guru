@@ -1,14 +1,14 @@
 'use strict'
 
 const shopUrl = require('generate-db-shop-urls')
-const moment = require('moment-timezone')
+const { DateTime } = require('luxon')
 
 const fallbackLink = (journey, bahncard, travelClass) => {
 	const trainLegs = journey.legs.filter(l => l.mode !== 'walking')
 	const origin = trainLegs[0].origin
 	const departure = trainLegs[0].departure
 	const destination = trainLegs[trainLegs.length - 1].destination
-	const date = moment.tz(departure, 'Europe/Berlin').format('DD.MM.YY')
+	const date = DateTime.fromISO(departure).setZone('Europe/Berlin').format('dd.MM.yy')
 
 	const data = {
 		startSucheSofort: true,
