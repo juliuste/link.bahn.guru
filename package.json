@@ -1,7 +1,8 @@
 {
 	"name": "link.bahn.guru",
-	"description": "Direct links to bahn.de",
 	"version": "0.0.0",
+	"private": true,
+	"description": "Direct links to bahn.de",
 	"keywords": [
 		"bahn",
 		"guru",
@@ -9,29 +10,39 @@
 		"german",
 		"railways",
 		"deutsche",
-		"bahn",
 		"link",
 		"db"
 	],
-	"author": "Julius Tens <mail@juliustens.eu>",
 	"homepage": "https://github.com/juliuste/link.bahn.guru",
-	"repository": "juliuste/link.bahn.guru",
 	"bugs": "https://github.com/juliuste/link.bahn.guru/issues",
+	"repository": "juliuste/link.bahn.guru",
+	"license": "ISC",
+	"author": "Julius Tens <mail@juliustens.eu>",
 	"main": "./index.js",
+	"scripts": {
+		"check-deps": "depcheck",
+		"lint": "eslint src",
+		"fix": "npm run lint -- --fix",
+		"test": "npm run lint && npm run check-deps"
+	},
 	"dependencies": {
-		"compression": "^1.7.2",
-		"config": "^1.30.0",
+		"compression": "^1.7.4",
 		"corser": "^2.0.1",
-		"express": "^4.16.3",
-		"generate-db-shop-urls": "github:juliuste/generate-db-shop-urls",
-		"moment-timezone": "^0.5.21",
-		"morgan": "^1.9.1",
+		"express": "^4.17.1",
+		"generate-db-shop-urls": "^2.0.0",
+		"moment-timezone": "^0.5.33",
+		"morgan": "^1.10.0",
 		"shorthash": "0.0.2"
 	},
-	"devDependencies": {},
-	"scripts": {},
-	"engines": {
-		"node": ">=8"
+	"devDependencies": {
+		"depcheck": "^1.4.1",
+		"eslint": "^7.27.0",
+		"eslint-config-standard": "^16.0.2",
+		"eslint-plugin-import": "^2.23.3",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-promise": "^5.1.0"
 	},
-	"license": "ISC"
+	"engines": {
+		"node": ">=14"
+	}
 }

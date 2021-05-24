@@ -2,8 +2,8 @@
 
 Direct deep links to the [Deutsche Bahn shop](https://www.bahn.de) for [bahn.guru](https://github.com/juliuste/bahn.guru). Powered by [@derhuerst](https://github.com/derhuerst)'s [generate-db-shop-urls](https://github.com/derhuerst/generate-db-shop-urls) package.
 
-[![license](https://img.shields.io/github/license/juliuste/link.bahn.guru.svg?style=flat)](LICENSE)
-[![chat on gitter](https://badges.gitter.im/juliuste.svg)](https://gitter.im/juliuste)
+[![License](https://img.shields.io/github/license/juliuste/boilerplate.svg?style=flat)](license)
+[![Contact me](https://img.shields.io/badge/contact-email-turquoise)](mailto:mail@juliustens.eu)
 
 ## Contributing
 
