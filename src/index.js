@@ -21,7 +21,7 @@ api.use(compression())
 
 // setup the logger
 morgan.token('id', (req, res) => req.headers['x-forwarded-for'] ? shorthash(req.headers['x-forwarded-for']) : shorthash(req.ip))
-api.use(morgan(':date[iso] :id :method :url :status :response-time ms', { stream: process.stdout }))
+api.use(morgan(':date[iso] :id :method :req[user-agent] :status :response-time ms', { stream: process.stdout }))
 
 api.get('/', link)
 
