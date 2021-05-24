@@ -10,7 +10,7 @@ specifiers:
   eslint-plugin-node: ^11.1.0
   eslint-plugin-promise: ^5.1.0
   express: ^4.17.1
-  generate-db-shop-urls: ^2.0.0
+  generate-db-shop-urls: github:juliuste/generate-db-shop-urls#1
   luxon: ^1.27.0
   morgan: ^1.10.0
   shorthash: 0.0.2
@@ -19,7 +19,7 @@ dependencies:
   compression: 1.7.4
   corser: 2.0.1
   express: 4.17.1
-  generate-db-shop-urls: 2.0.0
+  generate-db-shop-urls: github.com/juliuste/generate-db-shop-urls/588969e8328bffda09b39d4250c00e99c7cfba48
   luxon: 1.27.0
   morgan: 1.10.0
   shorthash: 0.0.2
@@ -1146,29 +1146,6 @@ packages:
   /functional-red-black-tree/1.0.1:
     resolution: {integrity: sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=}
     dev: true
-
-  /generate-db-shop-urls/2.0.0:
-    resolution: {integrity: sha512-BDQhbWcG8/tbEQwze273VEDByNaYaMGnNMjkkbuJf/XhzPi4JhKTMTZyGcYnjR9PjW20ryybODgeN8MP/39B8w==}
-    engines: {node: '>=10'}
-    peerDependencies:
-      db-hafas: ^5.0.0
-      hafas-client: ^5.0.0
-    dependencies:
-      cheerio: 1.0.0-rc.9
-      content-type: 1.0.4
-      debug: 4.3.1
-      fetch-ponyfill: 6.1.1
-      iconv-lite: 0.5.2
-      is-roughly-equal: 0.1.0
-      lodash.merge: 4.6.2
-      luxon: 1.27.0
-      moment-timezone: 0.5.33
-      pinkie-promise: 2.0.1
-      slugg: 1.2.1
-      trim-newlines: 3.0.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
 
   /generic-names/2.0.1:
     resolution: {integrity: sha512-kPCHWa1m9wGG/OwQpeweTwM/PYiQLrUIxXbt/P4Nic3LbGjCP0YwrALHW1uNLKZ0LIMg+RF+XRlj2ekT9ZlZAQ==}
@@ -2549,3 +2526,28 @@ packages:
       y18n: 5.0.8
       yargs-parser: 20.2.7
     dev: true
+
+  github.com/juliuste/generate-db-shop-urls/588969e8328bffda09b39d4250c00e99c7cfba48:
+    resolution: {tarball: https://codeload.github.com/juliuste/generate-db-shop-urls/tar.gz/588969e8328bffda09b39d4250c00e99c7cfba48}
+    name: generate-db-shop-urls
+    version: 1.1.0
+    engines: {node: '>=10'}
+    peerDependencies:
+      db-hafas: ^3.0.0
+      hafas-client: ^3.0.0
+    dependencies:
+      cheerio: 1.0.0-rc.9
+      content-type: 1.0.4
+      debug: 4.3.1
+      fetch-ponyfill: 6.1.1
+      iconv-lite: 0.5.2
+      is-roughly-equal: 0.1.0
+      lodash.merge: 4.6.2
+      luxon: 1.27.0
+      moment-timezone: 0.5.33
+      pinkie-promise: 2.0.1
+      slugg: 1.2.1
+      trim-newlines: 3.0.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
