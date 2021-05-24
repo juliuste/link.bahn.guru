@@ -10,6 +10,7 @@ specifiers:
   eslint-plugin-node: ^11.1.0
   eslint-plugin-promise: ^5.1.0
   express: ^4.17.1
+  express-robots-txt: ^0.5.0
   generate-db-shop-urls: github:juliuste/generate-db-shop-urls#1
   luxon: ^1.27.0
   morgan: ^1.10.0
@@ -19,6 +20,7 @@ dependencies:
   compression: 1.7.4
   corser: 2.0.1
   express: 4.17.1
+  express-robots-txt: 0.5.0_express@4.17.1
   generate-db-shop-urls: github.com/juliuste/generate-db-shop-urls/588969e8328bffda09b39d4250c00e99c7cfba48
   luxon: 1.27.0
   morgan: 1.10.0
@@ -1016,6 +1018,14 @@ packages:
   /etag/1.8.1:
     resolution: {integrity: sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=}
     engines: {node: '>= 0.6'}
+    dev: false
+
+  /express-robots-txt/0.5.0_express@4.17.1:
+    resolution: {integrity: sha512-ISyI++3Yy1lZ982/gQK3RVbghxe2R+/+VDQ8EWrmAmNncyD4VITJR9jYiSbvfxRSVqcGjKWndKkYbgY6fVFdOA==}
+    peerDependencies:
+      express: ^4.12.1
+    dependencies:
+      express: 4.17.1
     dev: false
 
   /express/4.17.1:
