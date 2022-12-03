@@ -32,7 +32,14 @@ const generateLink = async (journey, bahncard, travelClass) => {
 	if (journey.type !== 'journey' || !journey.legs || journey.legs.length === 0) throw new Error('invalid journey')
 
 	try {
-		const link = await shopUrl(journey, { bahncard, class: travelClass })
+		const link = await shopUrl({
+			...journey,
+			legs: journey.legs.map(l => ({
+				...l,
+				plannedDeparture: l.departure,
+				plannedArrival: l.arrival,
+			})),
+		}, { bahncard, class: travelClass })
 		return link
 	} catch (e) {
 		if (e.message !== 'no matching outbound journey found') {
