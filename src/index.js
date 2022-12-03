@@ -4,8 +4,6 @@ const express = require('express')
 const http = require('http')
 const corser = require('corser')
 const compression = require('compression')
-const morgan = require('morgan')
-const shorthash = require('shorthash').unique
 const robots = require('express-robots-txt')
 
 const link = require('./link')
@@ -20,10 +18,6 @@ const allowed = corser.simpleRequestHeaders.concat(['User-Agent'])
 api.use(corser.create({ requestHeaders: allowed })) // CORS
 api.use(compression())
 api.use(robots({ UserAgent: '*', Disallow: '/' }))
-
-// setup the logger
-morgan.token('id', (req, res) => req.headers['x-forwarded-for'] ? shorthash(req.headers['x-forwarded-for']) : shorthash(req.ip))
-api.use(morgan(':date[iso] :id :method :req[user-agent] :status :response-time ms', { stream: process.stdout }))
 
 api.get('/', link)
 
