@@ -24,7 +24,8 @@
 		"lint": "eslint src",
 		"fix": "npm run lint -- --fix",
 		"start": "node src/index",
-		"test": "npm run lint && npm run check-deps"
+		"test": "npm run lint && npm run check-deps",
+		"updateDiscounts": "wget https://www.bahn.de/web/api/angebote/stammdaten/ermaessigungsarten -O src/discounts.json"
 	},
 	"dependencies": {
 		"compression": "^1.7.4",
