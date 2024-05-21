@@ -1,6 +1,6 @@
 'use strict'
 
-const generateLink = require('./lib')
+import { generateLink } from './lib.js'
 
 const error = (msg, code) => {
 	const e = new Error(msg)
@@ -8,7 +8,7 @@ const error = (msg, code) => {
 	return e
 }
 
-const route = async (req, res, next) => {
+export const route = async (req, res, next) => {
 	try {
 		const journey = JSON.parse(req.query.journey)
 		const bahncard = req.query.bc
@@ -23,4 +23,3 @@ const route = async (req, res, next) => {
 	}
 }
 
-module.exports = route

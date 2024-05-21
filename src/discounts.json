@@ -1,0 +1,128 @@
+[
+    {
+        "key": "KEINE_ERMAESSIGUNG",
+        "bezeichnung": "keine Ermäßigung",
+        "klassen": [
+            "KLASSENLOS"
+        ],
+        "abkuerzung": "k.E.",
+        "id": 16,
+        "kciFaehigkeit": true
+    },
+    {
+        "key": "BAHNCARD25",
+        "bezeichnung": "BahnCard 25",
+        "klassen": [
+            "KLASSE_1",
+            "KLASSE_2"
+        ],
+        "abkuerzung": "BC25",
+        "id": 17,
+        "kciFaehigkeit": true
+    },
+    {
+        "key": "BAHNCARD50",
+        "bezeichnung": "BahnCard 50",
+        "klassen": [
+            "KLASSE_1",
+            "KLASSE_2"
+        ],
+        "abkuerzung": "BC50",
+        "id": 23,
+        "kciFaehigkeit": true
+    },
+    {
+        "key": "BAHNCARD100",
+        "bezeichnung": "BahnCard 100",
+        "klassen": [
+            "KLASSE_1",
+            "KLASSE_2"
+        ],
+        "abkuerzung": "BC100",
+        "id": 24,
+        "kciFaehigkeit": false
+    },
+    {
+        "key": "BAHNCARDBUSINESS25",
+        "bezeichnung": "BahnCard Business 25",
+        "klassen": [
+            "KLASSE_1",
+            "KLASSE_2"
+        ],
+        "abkuerzung": "BCB25",
+        "id": 19,
+        "kciFaehigkeit": true
+    },
+    {
+        "key": "BAHNCARDBUSINESS50",
+        "bezeichnung": "BahnCard Business 50",
+        "klassen": [
+            "KLASSE_1",
+            "KLASSE_2"
+        ],
+        "abkuerzung": "BCB50",
+        "id": 18,
+        "kciFaehigkeit": true
+    },
+    {
+        "key": "CH-GENERAL-ABONNEMENT",
+        "bezeichnung": "CH-General-Abonnement",
+        "klassen": [
+            "KLASSE_1",
+            "KLASSE_2"
+        ],
+        "abkuerzung": "GA",
+        "id": 1,
+        "kciFaehigkeit": false
+    },
+    {
+        "key": "CH-HALBTAXABO_OHNE_RAILPLUS",
+        "bezeichnung": "HalbtaxAbo",
+        "klassen": [
+            "KLASSENLOS"
+        ],
+        "abkuerzung": "HA",
+        "id": 21,
+        "kciFaehigkeit": false
+    },
+    {
+        "key": "A-VORTEILSCARD",
+        "bezeichnung": "Vorteilscard Österreich (inkl. RAILPLUS)",
+        "klassen": [
+            "KLASSENLOS"
+        ],
+        "abkuerzung": "VC",
+        "id": 20,
+        "kciFaehigkeit": false
+    },
+    {
+        "key": "NL-40_INKL_RAILPLUS",
+        "bezeichnung": "NL-40% (inkl. RAILPLUS)",
+        "klassen": [
+            "KLASSENLOS"
+        ],
+        "abkuerzung": "40%NS/RAILPLUS",
+        "id": 6,
+        "kciFaehigkeit": false
+    },
+    {
+        "key": "NL-40_OHNE_RAILPLUS",
+        "bezeichnung": "NL-40% (ohne RAILPLUS)",
+        "klassen": [
+            "KLASSENLOS"
+        ],
+        "abkuerzung": "40%NS",
+        "id": 22,
+        "kciFaehigkeit": false
+    },
+    {
+        "key": "KLIMATICKET_OE",
+        "bezeichnung": "KlimaTicket Österreich",
+        "klassen": [
+            "KLASSENLOS"
+        ],
+        "abkuerzung": "KTÖ",
+        "id": 7,
+        "kciFaehigkeit": false
+    }
+]

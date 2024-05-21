@@ -1,12 +1,12 @@
 'use strict'
 
-const express = require('express')
-const http = require('http')
-const corser = require('corser')
-const compression = require('compression')
-const robots = require('express-robots-txt')
+import compression from 'compression'
+import corser from 'corser'
+import express from 'express'
+import robots from 'express-robots-txt'
+import http from 'http'
 
-const link = require('./link')
+import { route as link } from './link.js'
 
 const port = process.env.PORT
 if (!port) throw new Error('please provide a PORT environment variable')
